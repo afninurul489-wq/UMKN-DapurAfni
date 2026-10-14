@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>UMKM-Afni | Kacang Atom</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <nav class="navbar">
+            <a href="#beranda" class="brand">
+                <img src="assets/logo.png" alt="Logo UMKM-Afni">
+                <span>UMKM-Afni</span>
+            </a>
+
+            <button class="menu-toggle" id="menuToggle"
+                    aria-label="Buka menu"
+                    aria-expanded="false">
+                ☰
+            </button>
+
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#beranda">Beranda</a></li>
+                <li><a href="#produk">Produk</a></li>
+                <li><a href="#tentang">Tentang Kami</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- BERANDA -->
+    <section id="beranda" class="hero">
+        <div class="hero-content">
+            <span class="label">Camilan Pilihan</span>
+
+            <h1>UMKM-Afni</h1>
+
+            <h2>Kacang Atom</h2>
+
+            <p>
+                Renyahnya bikin nagih!
+                Nikmati camilan kacang atom dengan rasa
+                original dan balado yang lezat untuk menemani
+                waktu santaimu.
+            </p>
+
+            <a href="#produk" class="btn">
+                Lihat Produk
+            </a>
+
+            <a href="https://wa.me/6282294193045"
+               class="btn btn-wa"
+               target="_blank"
+               rel="noopener">
+                Hubungi WhatsApp
+            </a>
+        </div>
+
+        <div class="hero-image">
+            <img src="assets/logo.png" alt="Logo Kacang Atom UMKM-Afni">
+        </div>
+    </section>
+
+    <!-- PRODUK -->
+    <section id="produk" class="section produk-section">
+        <h2>Produk Kami</h2>
+
+        <p class="section-description">
+            Pilih rasa kacang atom favoritmu!
+        </p>
+
+        <div class="produk-container">
+
+            <!-- PRODUK ORIGINAL -->
+            <article class="produk-card">
+                <div class="foto-produk">
+                    <img
+                        src="assets/original.png"
+                        alt="Kacang Atom Original"
+                        loading="lazy">
+                </div>
+
+                <div class="produk-info">
+                    <h3>Kacang Atom Original</h3>
+
+                    <p>
+                        Kacang atom dengan rasa gurih dan renyah
+                        untuk menemani waktu santai.
+                    </p>
+
+                    <h4>Rp 2.000</h4>
+
+                    <button
+                        class="btn-pesan"
+                        data-produk="Kacang Atom Original">
+                        Pesan Sekarang
+                    </button>
+                </div>
+            </article>
+
+            <!-- PRODUK BALADO -->
+            <article class="produk-card">
+                <div class="foto-produk">
+                    <img
+                        src="assets/balado.png"
+                        alt="Kacang Atom Balado"
+                        loading="lazy">
+                </div>
+
+                <div class="produk-info">
+                    <h3>Kacang Atom Balado</h3>
+
+                    <p>
+                        Perpaduan rasa pedas dan gurih
+                        yang nikmat di setiap gigitan.
+                    </p>
+
+                    <h4>Rp 2.000</h4>
+
+                    <button
+                        class="btn-pesan"
+                        data-produk="Kacang Atom Balado">
+                        Pesan Sekarang
+                    </button>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- TENTANG KAMI -->
+    <section id="tentang" class="section tentang-section">
+        <h2>Tentang UMKM-Afni</h2>
+
+        <p class="tentang-text">
+            UMKM-Afni merupakan usaha camilan yang menyediakan
+            kacang atom dengan pilihan rasa original dan balado.
+            Kami hadir untuk memberikan pilihan camilan yang
+            cocok dinikmati bersama keluarga dan teman.
+        </p>
+
+        <div class="keunggulan">
+            <div class="keunggulan-card">
+                <span>🥜</span>
+                <h3>Kacang Atom</h3>
+                <p>Camilan untuk menemani waktu santai.</p>
+            </div>
+
+            <div class="keunggulan-card">
+                <span>😋</span>
+                <h3>Pilihan Rasa</h3>
+                <p>Tersedia rasa original dan balado.</p>
+            </div>
+
+            <div class="keunggulan-card">
+                <span>💰</span>
+                <h3>Harga Terjangkau</h3>
+                <p>Hanya Rp 2.000 per produk.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- KONTAK -->
+    <section id="kontak" class="section kontak-section">
+        <h2>Hubungi Kami</h2>
+
+        <p class="section-description">
+            Kami siap menerima pesananmu!
+        </p>
+
+        <div class="kontak-container">
+
+            <div class="kontak-item">
+                <span>📱</span>
+                <div>
+                    <h3>Nomor WhatsApp</h3>
+                    <a href="https://wa.me/6282294193045"
+                       target="_blank"
+                       rel="noopener">
+                        082294193045
+                    </a>
+                </div>
+            </div>
+
+            <div class="kontak-item">
+                <span>✉️</span>
+                <div>
+                    <h3>Email</h3>
+                    <a href="mailto:afninurul489@gmail.com">
+                        afninurul489@gmail.com
+                    </a>
+                </div>
+            </div>
+
+            <div class="kontak-item">
+                <span>📍</span>
+                <div>
+                    <h3>Alamat</h3>
+                    <p>Naga Harjo 1</p>
+                </div>
+            </div>
+
+            <div class="kontak-item">
+                <span>🕒</span>
+                <div>
+                    <h3>Jam Operasional</h3>
+                    <p>Senin–Minggu</p>
+                    <p>07.00–18.00 WIB</p>
+                </div>
+            </div>
+
+        </div>
+
+        <a href="https://wa.me/6282294193045"
+           class="btn btn-kontak"
+           target="_blank"
+           rel="noopener">
+            Pesan Melalui WhatsApp
+        </a>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>
+            &copy; <span id="tahun"></span> UMKM-Afni.
+            Kacang Atom, Renyahnya Bikin Nagih!
+        </p>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>

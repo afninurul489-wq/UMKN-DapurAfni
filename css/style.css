@@ -1,0 +1,489 @@
+/* =========================
+   PENGATURAN DASAR
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 85px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff8ed;
+    color: #4b2a16;
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+header {
+    background-color: #4b2a16;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    max-width: 1150px;
+    margin: auto;
+    padding: 12px 22px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    color: #ffe2a8;
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.brand img {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    list-style: none;
+}
+
+.nav-menu a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.nav-menu a:hover {
+    color: #ffc857;
+}
+
+.menu-toggle {
+    display: none;
+    border: none;
+    background: transparent;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+
+/* =========================
+   BERANDA
+========================= */
+
+.hero {
+    max-width: 1150px;
+    margin: auto;
+    padding: 65px 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.hero-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.label {
+    display: inline-block;
+    padding: 7px 16px;
+    border-radius: 25px;
+
+    background-color: #f4d49a;
+    color: #603813;
+
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    color: #603813;
+    font-size: clamp(36px, 5vw, 58px);
+    line-height: 1.2;
+}
+
+.hero h2 {
+    color: #bd801d;
+    font-size: clamp(25px, 4vw, 38px);
+}
+
+.hero-content > p {
+    margin: 18px 0 25px;
+}
+
+.hero-image {
+    flex: 1;
+    min-width: 0;
+    text-align: center;
+}
+
+.hero-image img {
+    display: block;
+    width: 100%;
+    max-width: 390px;
+    height: auto;
+
+    object-fit: contain;
+    margin: auto;
+    border-radius: 15px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 20px;
+    margin: 5px 5px 5px 0;
+
+    background-color: #70401f;
+    color: white;
+
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #a56825;
+    transform: translateY(-2px);
+}
+
+.btn-wa {
+    background-color: #79512f;
+}
+
+
+/* =========================
+   BAGIAN UMUM
+========================= */
+
+.section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.section h2 {
+    color: #603813;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.section-description {
+    color: #795b40;
+    margin-bottom: 30px;
+}
+
+
+/* =========================
+   PRODUK
+========================= */
+
+.produk-section {
+    background-color: #f3e2c7;
+}
+
+.produk-container {
+    max-width: 950px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px;
+    align-items: start;
+}
+
+.produk-card {
+    min-width: 0;
+    padding: 16px;
+
+    background-color: white;
+    border: 2px solid #dfc19a;
+    border-radius: 16px;
+
+    box-shadow: 0 5px 15px rgba(75, 42, 22, 0.1);
+    transition: 0.3s;
+}
+
+.produk-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(75, 42, 22, 0.15);
+}
+
+/* Foto produk tidak dipotong */
+.foto-produk {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+
+    background-color: #fff8ed;
+    border-radius: 10px;
+}
+
+.foto-produk img {
+    display: block;
+
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+
+    object-fit: contain;
+    object-position: center;
+}
+
+.produk-info {
+    padding: 15px 5px 5px;
+}
+
+.produk-info h3 {
+    color: #603813;
+    font-size: 21px;
+    margin-bottom: 10px;
+}
+
+.produk-info p {
+    color: #795b40;
+    margin-bottom: 12px;
+}
+
+.produk-info h4 {
+    color: #b87519;
+    font-size: 24px;
+    margin: 12px 0 18px;
+}
+
+.btn-pesan {
+    display: inline-block;
+    padding: 12px 18px;
+
+    background-color: #70401f;
+    color: white;
+
+    border: none;
+    border-radius: 8px;
+
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-pesan:hover {
+    background-color: #a56825;
+}
+
+
+/* =========================
+   TENTANG KAMI
+========================= */
+
+.tentang-section {
+    background-color: #fff8ed;
+}
+
+.tentang-text {
+    max-width: 750px;
+    margin: 20px auto 35px;
+}
+
+.keunggulan {
+    max-width: 950px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.keunggulan-card {
+    padding: 25px 15px;
+    border-radius: 12px;
+    background-color: #f3e2c7;
+}
+
+.keunggulan-card span {
+    font-size: 35px;
+}
+
+.keunggulan-card h3 {
+    margin: 10px 0;
+    color: #603813;
+}
+
+
+/* =========================
+   KONTAK
+========================= */
+
+.kontak-section {
+    background-color: #f3e2c7;
+}
+
+.kontak-container {
+    max-width: 700px;
+    margin: 0 auto 25px;
+    padding: 25px;
+
+    background-color: white;
+    border-radius: 15px;
+    text-align: left;
+
+    box-shadow: 0 5px 15px rgba(75, 42, 22, 0.08);
+}
+
+.kontak-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 14px 0;
+    border-bottom: 1px solid #eee0cd;
+}
+
+.kontak-item:last-child {
+    border-bottom: none;
+}
+
+.kontak-item > span {
+    font-size: 27px;
+}
+
+.kontak-item h3 {
+    color: #603813;
+    font-size: 17px;
+}
+
+.kontak-item p,
+.kontak-item a {
+    color: #79512f;
+    overflow-wrap: anywhere;
+}
+
+.kontak-item a:hover {
+    color: #bd801d;
+}
+
+.btn-kontak {
+    margin-top: 10px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    padding: 22px 15px;
+    background-color: #4b2a16;
+    color: white;
+    text-align: center;
+}
+
+
+/* =========================
+   TABLET DAN HP
+========================= */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-wrap: wrap;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        width: 100%;
+        padding-top: 12px;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .nav-menu a {
+        display: block;
+        padding: 12px 5px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    .hero-image img {
+        max-width: 320px;
+    }
+
+    .keunggulan {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* =========================
+   HP KECIL
+========================= */
+
+@media (max-width: 480px) {
+
+    .brand {
+        font-size: 19px;
+    }
+
+    .produk-container {
+        grid-template-columns: 1fr;
+        max-width: 380px;
+    }
+
+    .produk-card {
+        padding: 12px;
+    }
+
+    .produk-info h3 {
+        font-size: 19px;
+    }
+
+    .section h2 {
+        font-size: 27px;
+    }
+
+    .kontak-container {
+        padding: 18px;
+    }
+
+    .btn {
+        font-size: 14px;
+    }
+}
